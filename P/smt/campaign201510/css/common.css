@@ -1,0 +1,524 @@
+﻿@charset "utf-8";
+/* 
+CSS Information
+ File name:      common.css
+ Author:         Administrator
+ Style Info:     Modify YUI Reset CSS, YUI Fonts CSS
+ *http://yuilibrary.com/license/
+ *version: 3.7.2 build: 5639
+----------------------------------------------------- */
+/* reset.css
+****************************/
+
+html {
+	color:#000;
+	background:#FFF;
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	margin:0;
+	padding:0;
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
+	display:block;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img {
+	border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym {
+	border:0;
+	font-variant:normal;
+}
+sup {
+	vertical-align:text-top;
+}
+sub {
+	vertical-align:text-bottom;
+}
+input,textarea,select {
+	font-family:inherit;
+	font-size:inherit;
+	font-weight:inherit;
+}
+input,textarea,select {
+	*font-size:100%;
+}
+legend {
+	color:#000;
+}
+
+/* fonts.css
+****************************/
+
+body {
+	font:13px/1.231 arial,helvetica,clean,sans-serif;
+	*font-size:small; /* for IE */
+	*font:x-small; /* for IE in quirks mode */
+	-webkit-text-size-adjust: none;
+}
+select,input,button,textarea {
+	font:99% arial,helvetica,clean,sans-serif;
+}
+table {
+	font-size:inherit;
+	font:100%;
+}
+pre,code,kbd,samp,tt {
+	font-family:monospace;
+	*font-size:108%;
+	line-height:100%;
+}
+
+
+/* base.css
+****************************/
+
+/* clearfix */
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+	font-size: 0.1em;
+}
+.clearfix {display:inline-block;}
+* html .clearfix {height:1px;}
+.clearfix {display:block;}
+
+/* マージン・インデント */
+.mt5 {margin-top: 5px;}
+.mt10 {margin-top: 10px;}
+.mt15 {margin-top: 15px;}
+.mt20 {margin-top: 20px;}
+.mt25 {margin-top: 25px;}
+.mt30 {margin-top: 30px;}
+
+.mr5 {margin-right: 5px;}
+.mr10 {margin-right: 10px;}
+.mr15 {margin-right: 15px;}
+.mr20 {margin-right: 20px;}
+.mr25 {margin-right: 25px;}
+.mr30 {margin-right: 30px;}
+
+.mb5 {margin-bottom: 5px;}
+.mb10 {margin-bottom: 10px;}
+.mb15 {margin-bottom: 15px;}
+.mb20 {margin-bottom: 20px;}
+.mb25 {margin-bottom: 25px;}
+.mb30 {margin-bottom: 30px;}
+
+.ml5 {margin-left: 5px;}
+.ml10 {margin-left: 10px;}
+.ml15 {margin-left: 15px;}
+.ml20 {margin-left: 20px;}
+.ml25 {margin-left: 25px;}
+.ml30 {margin-left: 30px;}
+
+.pt5 {padding-top: 5px;}
+.pt10 {padding-top: 10px;}
+.pt15 {padding-top: 15px;}
+.pt20 {padding-top: 20px;}
+.pt25 {padding-top: 25px;}
+.pt30 {padding-top: 30px;}
+
+.pr5 {padding-right: 5px;}
+.pr10 {padding-right: 10px;}
+.pr15 {padding-right: 15px;}
+.pr20 {padding-right: 20px;}
+.pr25 {padding-right: 25px;}
+.pr30 {padding-right: 30px;}
+
+.pb5 {padding-bottom: 5px;}
+.pb10 {padding-bottom: 10px;}
+.pb15 {padding-bottom: 15px;}
+.pb20 {padding-bottom: 20px;}
+.pb25 {padding-bottom: 25px;}
+.pb30 {padding-bottom: 30px;}
+
+.pl5 {padding-left: 5px;}
+.pl10 {padding-left: 10px;}
+.pl15 {padding-left: 15px;}
+.pl20 {padding-left: 20px;}
+.pl25 {padding-left: 25px;}
+.pl30 {padding-left: 30px;}
+
+/* 行揃え */
+.alignL {text-align: left;}
+.alignC {text-align: center;}
+.alignR {text-align: right;}
+
+/* リンク */
+a:link,a:visited,a:hover,a:active {color: #ff3c9b; text-decoration: underline;}
+
+/* 要素設定 */
+html,body {
+	color: #333;
+	text-align: center;
+}
+ul,dl,ol {
+	text-indent: 0;
+	list-style-position:outside;
+}
+th,td {
+	vertical-align: top;
+}
+p {
+	text-align: justify;
+}
+
+img:not([width]) {
+    zoom: 0.5;
+}
+
+/* baseLayout
+****************************/
+body {
+	background: #fff2f8;
+	line-height: 1.4;
+}
+#wrapper {
+	overflow: hidden;
+}
+/* #header *****************/
+#gHeader h1 {
+	overflow: hidden;
+	height: 40px;
+	padding: 5px 10px;
+	background: url(../images/bg_header.png) repeat-x top;
+	background-size: 285px 50px;
+	text-align: left;
+	font-size: 77%;
+}
+
+/* #nav ********************/
+#gHeader nav {
+	background: #FFA4D0;
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.28), 0 0 5px rgba(208,115,160,0.5);
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.28), 0 0 5px rgba(208,115,160,0.5);
+	box-shadow: 0 1px 4px rgba(0,0,0,0.28), 0 0 5px rgba(208,115,160,0.5);
+}
+
+#gHeader nav li {
+	width: 25%;
+	float: left;
+}
+
+#gHeader nav li a {
+	display: block;
+	padding: 25px 0 5px;
+	border-left: 1px solid #FDDAF0;
+	text-align: center;
+	color: #fff;
+	text-shadow: 0 1px 3px rgba(0,0,0,0.75);
+	text-decoration: none;
+	font-size: 85%;
+	line-height: 1.1;
+}
+
+#gHeader nav li:first-child a {
+	border-left: none;
+}
+
+#gHeader nav li a[href$="/catalog/"] {
+	background: url(../images/gNav_catalog.png) no-repeat center 3px;
+	background-size: 21px 21px;
+}
+
+#gHeader nav li a[href$="/shop/"] {
+	background: url(../images/gNav_shop.png) no-repeat center 3px;
+	background-size: 18px 22px;
+}
+
+#gHeader nav li a[href^="https://www.prism-kan.com/yoyaku/"] {
+	background: url(../images/gNav_reserve.png) no-repeat center 3px;
+	background-size: 21px 21px;
+}
+
+#gHeader nav li a[href^="https://www.prism-kan.com/catalog_form/"] {
+	background: url(../images/gNav_request.png) no-repeat center 3px;
+	background-size: 14px 22px;
+}
+
+
+/* #main ****************/
+#main {
+	padding: 15px 5px 10px;
+	margin: 10px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background: #fff url(../images/bg_main.png) repeat-x top;
+	background-size: 27px 9px;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.35);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.35);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.35);
+	text-align: left;
+}
+
+#main p,
+#main > ul {
+	font-size: 93%;
+}
+
+/* #aside ******************/
+#aside .btnCatalog {
+	margin: 10px;
+}
+#aside .btnCatalog a {
+	display: block;
+	padding: 10px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background: #ffcbe5;
+	background: -moz-linear-gradient(top, #ffcbe5, #ff7dbd);
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffcbe5), to(#ff7dbd));
+	background: linear-gradient(top, #ffcbe5, #ff7dbd);
+	-moz-box-shadow: inset 1px 1px 2px rgba(196,20,107,0.75), inset -1px -1px 2px rgba(196,20,107,0.75);
+	-webkit-box-shadow: inset 1px 1px 2px rgba(196,20,107,0.75), inset -1px -1px 2px rgba(196,20,107,0.75);
+	box-shadow: inset 1px 1px 2px rgba(196,20,107,0.75), inset -1px -1px 2px rgba(196,20,107,0.75);
+	color: #fff;
+	text-shadow: 0 1px 3px rgba(0,0,0,0.75);
+	text-decoration: none;
+	font-size: 138.5%;
+	text-align: center;
+}
+
+#aside nav {
+	background: #fff;
+}
+
+#aside nav ul:not([class]) li {
+	float: left;
+	width: 50%;
+	background: #99235d;
+}
+
+#aside nav ul:not([class]) li a {
+	display: block;
+	height: 2.4em;
+	line-height: 2.4em;
+	border-top: 1px solid #DFBDCE;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+}
+
+#aside nav ul:not([class]) li:nth-child(even) a {
+	border-left: 1px solid #DFBDCE;
+}
+
+#aside nav ul:not([class]) li:first-child a,
+#aside nav ul:not([class]) li:nth-child(2) a {
+	border-top: none;
+}
+
+#aside nav ul.guide {
+	clear: both;
+	padding: 10px 0;
+}
+
+#aside nav ul.guide li {
+	display: inline;
+	margin-right: -5px;
+}
+
+#aside nav ul.guide li a {
+	display: inline-block;
+	color: #434343;
+	text-decoration: none;
+	font-size: 85%;
+	line-height: 1;
+}
+
+#aside nav ul.guide li a[href^="/"] {
+	padding-left: 12px;
+	background: url(../images/icon_pc.png) no-repeat left center;
+	background-size: 7px 6px;
+}
+
+#aside nav ul.guide li:not(:last-child) a::after {
+	content: "｜";
+}
+
+/* -----------------------------------
+    Social
+   ----------------------------------- */
+#sns-btn {
+	margin: 10px auto;
+	position: relative;
+	overflow: hidden;
+}
+
+#sns-btn ul {
+	position: relative;
+	left: 50%;
+	float: left;
+}
+
+#sns-btn ul li {
+	position: relative;
+	left: -50%;
+	float: left;
+}
+
+#sns-btn ul .btn01 {
+	width: 69px;
+	overflow: hidden;
+}
+
+#sns-btn ul .btn02 {
+	width: 71px;
+	height: 21px;
+	margin: 0 6px;
+	overflow: hidden;
+}
+
+#sns-btn ul .btn02 iframe {
+	border: none;
+}
+
+#sns-btn ul .btn03 {
+	margin: 0 2px 0 0;
+	width: 32px;
+	overflow: hidden;
+}
+
+#sns-btn ul .btn04 {
+	margin:0 0 0 5px;
+	width: 88px;
+	overflow: hidden;
+}
+
+#sns-btn iframe,#gFooter #sns-btn #___plusone_0{
+	width: 100px !important;
+}
+
+/* ----------------------------------- */
+
+
+/* #sns-btn ****************
+#sns-btn{
+	margin: 10px auto;
+}
+#sns-btn iframe,#gFooter #sns-btn #___plusone_0{
+	width: 100px !important;
+}
+*/
+
+/* #footer *****************/
+#gFooter {
+	background: #fff;
+	clear:both;
+}
+
+#gFooter #siteTop {
+	float: left;
+}
+
+#gFooter #siteTop a {
+	display: block;
+	padding: 2px 10px 2px 17px;
+	background: url(../images/icon_home.png) no-repeat 3px center;
+	background-size: 11px 11px;
+	color: #555;
+	text-decoration: none;
+}
+
+#gFooter #pageTop {
+	float: right;
+	margin-bottom: 1px;
+}
+
+#gFooter #pageTop a {
+	display: block;
+	padding: 2px 10px;
+	-moz-border-radius: 3px 3px 0 0 / 3px 3px 0 0;
+	-webkit-border-radius: 3px 3px 0 0 / 3px 3px 0 0;
+	border-radius: 3px 3px 0 0 / 3px 3px 0 0;
+	background: #555;
+	color: #fff;
+	text-decoration: none;
+}
+
+#gFooter #pageTop a::before {
+	content: "▲";
+	margin-right: .5em;
+}
+
+#gFooter #copyright {
+	clear: both;
+	padding: 15px 10px;
+	background: #555 url(../images/bg_footer.png) repeat-x bottom;
+	background-size: 21px 7px;
+	text-align: center;
+	color: #e3e5e2;
+	font-size: 93%;
+}
+
+#gFooter #copyright small {
+	font-size: 100%;
+}
+
+/* 共通スタイル *****************/
+.bnr {
+	text-align: center;
+}
+
+.bnr img {
+	max-width: 100%;
+}
+
+.pageTitle {
+	margin-bottom: 5px;
+	font-size: 138.5%;
+	color: #e6006c;
+}
+
+.pageTitle_red {
+	margin-bottom: 5px;
+	font-size: 138.5%;
+	color: #ff0000;
+}
+
+.subTitle {
+	height: 23px;
+	line-height: 23px;
+	margin-bottom: 10px;
+	background: url(../images/bg_subtitle.png) no-repeat center top;
+	background-size: 279px 23px;
+	color: #d50169;
+	text-align: center;
+}
+
+#main .imgL {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+#main .imgR {
+	float: right;
+	margin: 0 0 10px 10px;
+}
