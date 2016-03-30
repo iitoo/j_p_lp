@@ -28,11 +28,11 @@
 
 #contents{
 	line-height: 1.5;
-	text-align: center;
+	text-align: center !important;
 }
 
 #contents img {
-	max-width: 90%;
+	max-width: 91%;
 }
 
 #contents div.btn{
