@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+/*-----------------------------
+	contents
+-----------------------------*/
+
+div#contents {
+	width: 964px;
+	text-align: center;	
+}
+
+div#contents img{
+	display:block;
+	margin: auto;
+}
+
+div#contents div#area-a{
+	margin: 15px auto 30px;
+	background: #fcc9dc;
+	padding-bottom: 30px;
+}
+div#contents div#area-a ul{
+	list-style: none;
+}
+div#contents div#area-a ul li{
+	margin-bottom: 20px;
+
+}
+div.btn{
+	text-align: center;
+	margin: 50px auto;
+}
+dl#ask{
+	margin: 0 auto 30px;
+}
+dl#ask dt{
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+dl#ask dd{
+	display: inline;
+	margin: 10px;
+}

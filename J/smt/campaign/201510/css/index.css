@@ -1,0 +1,81 @@
+﻿@charset "utf-8";
+
+/* Index -----------------------------
+
+    -  Import CSS
+
+    1. Common
+    2. Title
+    3. Category
+
+
+       Other
+
+   ----------------------------------- */
+
+/* Import CSS ------------------------ */
+
+	/* @import "../../../common/css/default.css"; */
+	@import "./default.css";
+
+/* ----------------------------------- */
+
+
+
+/* -----------------------------------
+    1. Common
+   ----------------------------------- */
+
+#contents{
+	line-height: 1.5;
+	text-align: center;
+}
+
+#contents img {
+	max-width: 90%;
+}
+
+#contents div.btn{
+	margin: 20px auto;
+	max-width: 80%;
+}
+#contents #area-a{
+	text-align: center;
+	margin-bottom: 10px;
+	background: #fcc9dc;
+	padding-bottom: 10px;
+}
+#contents div#area-a ul{
+	list-style: none;
+}
+#contents div#area-a ul li{
+	margin-bottom: 20px;
+}
+#contents #contact{
+	text-align: center;
+	padding-bottom: 30px;
+}
+#contents #contact dl dt{
+	font-size: 16px;
+	font-weight: bold;
+}
+#contents #contact dl dd{
+	display: inline;
+	margin: 10px;
+}
+#contents #notice{
+	text-align: center;
+	font-size: 12px;
+}
+	
+
+/* ----------------------------------- */
+
+
+/* -----------------------------------
+      Others
+   ----------------------------------- */
+	
+
+
+/* ----------------------------------- */

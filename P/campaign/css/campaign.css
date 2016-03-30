@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+	クーポン #coupon
+-------------------------------------------------------------------------------
+*/
+
+body{
+	background:url(../images/bg.jpg) repeat-x;
+	background-attachment:fixed;
+}
+div#ttl{
+	margin: 0 auto;
+	width: 960px;
+}
+div#contents{
+	background: #fff;
+	text-align: center;
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+}
+div#contents div#area-a{
+	margin-bottom: 30px;
+	background: #7f420b;
+	padding-bottom: 30px;
+}
+div#contents div#area-a ul{
+	list-style: none;
+}
+div#contents div#area-a ul li{
+	margin-bottom: 20px;
+}
+div#btn{
+	text-align: center;
+	margin: 50px auto;
+}
+dl#ask{
+	text-align: center;
+	margin: 0 auto 30px;
+}
+dl#ask dt{
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+dl#ask dd{
+	display: inline;
+	margin: 10px;
+}
+div#footer{
+	background: #e9e9e9;
+}
+div#footer ul{
+	margin: 0 auto;
+	width: 960px;
+}

@@ -1,0 +1,700 @@
+@charset "utf-8";
+
+/* Index -----------------------------
+
+    -  Import CSS
+
+    1. Site Default
+    2. Layout
+    3. Header
+    4. Footer
+    5. Global Navigation
+    6. Back Button
+    7. Flick
+
+       Other
+       fancybox
+       Float Canceler
+
+   ----------------------------------- */
+
+/* Import CSS ------------------------ */
+
+	@import "reset.css";
+
+/* ----------------------------------- */
+
+/* -----------------------------------
+    1. Site Default
+   ----------------------------------- */
+body {
+	color: #555;
+	font-size: 14px;
+	font-family: ArialMT, Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3", "メイリオ", sans-serif;
+	background: #fff url(../img/bg.gif) repeat-x center top;
+	-webkit-text-size-adjust: none;
+}
+
+a {
+	color: #e95098;
+}
+
+a:hover,
+a:focus,
+a:active {
+	text-decoration: none;
+}
+
+
+/* ----------------------------------- */
+
+
+
+/* -----------------------------------
+    2. Layout
+   ----------------------------------- */
+#contents {
+	padding: 12px 10px 15px;
+}
+
+
+/* ----------------------------------- */
+
+
+
+/* -----------------------------------
+    3. Header
+   ----------------------------------- */
+header {
+	height: 122px;
+	position: relative;
+}
+
+header .pagetop {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+header hgroup h1 {
+	/*background: transparent url(../img/bg_logo01.png) no-repeat;*/
+	width: 191px;
+	height: 78px;
+	position: absolute;
+	top: 10px;
+	left: 0;
+}
+
+header hgroup h1 a {
+	background: transparent url(../img/logo01.png) no-repeat;
+	width: 167px;
+	height: 46px;
+	font-size: 0.01em;
+	text-indent: -9999px;
+	display: block;
+	position: absolute;
+	top: 16px;
+	left: 8px;
+	background-size: 167px 45px;
+}
+
+header hgroup h1 a:hover,
+header hgroup h1 a:focus,
+header hgroup h1 a:active {
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	-ms-filter: "alpha(opacity=60)";
+}
+
+header hgroup h2 {
+	font-size: 12px;
+	position: absolute;
+ 	top: 7px;
+	left: 9px;
+}
+
+header .contact {
+	position: absolute;
+	top: 30px;
+	right: 5px;
+}
+
+header .contact dl dt {
+	font-size: 0.01em;
+	text-indent: -9999px;
+}
+
+header .contact dl dd a {
+	background: transparent url(../img/bg_tel.png) no-repeat;
+	width: 130px;
+	height: 35px;
+	font-size: 0.01em;
+	text-indent: -9999px;
+	display: block;
+	background-size: 130px 35px;
+}
+
+header .button {
+	width: 100%;
+	position: absolute;
+ 	top: 76px;
+	left: 0;
+}
+
+header .button a {
+	background: transparent url(../img/btn_catalog02.gif) no-repeat;
+	width: 300px;
+	height: 40px;
+	margin: 0 auto;
+	font-size: 0.01em;
+	text-indent: -9999px;
+	display: block;
+	background-size: 300px 40px;
+}
+
+header .button2 {
+	width: 100%;
+	position: absolute;
+ 	top: 76px;
+	left: 0;
+}
+
+header .button2 a {
+	background: transparent url(../img/btn_catalog04.gif) no-repeat;
+	width: 300px;
+	height: 40px;
+	margin: 0 auto;
+	font-size: 0.01em;
+	text-indent: -9999px;
+	display: block;
+	background-size: 300px 40px;
+}
+
+/* ----------------------------------- */
+
+
+
+/* -----------------------------------
+    4. Footer
+   ----------------------------------- */
+footer {
+	background: transparent url(../img/bg_footer.gif) repeat-x center bottom;
+	padding-bottom: 7px;
+}
+
+footer nav ul li a {
+	background: #f3f3f3 url(../img/icon_arrow01_r.gif) no-repeat 97% center;
+	width: 100%;
+	padding: 10px 0;
+	color: #555;
+	text-indent: 10px;
+	text-decoration: none;
+	display: block;
+	border-top: 1px solid #999;
+}
+
+footer nav ul li a:hover,
+footer nav ul li a:focus,
+footer nav ul li a:active {
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	-ms-filter: "alpha(opacity=60)";
+}
+
+footer #transition {
+	padding: 10px;
+	border-top: 1px solid #999;
+	border-bottom: 2px dotted #bbb;
+}
+
+footer #transition .bread {
+	display: none;
+}
+
+footer #transition .bread span {
+	margin: 0 0.5em;
+}
+
+footer #transition .endtop {
+	float: right;
+}
+
+footer #transition .endtop a {
+	background: transparent url(../img/icon_arrow02_t.gif) no-repeat right center;
+	padding-right: 15px;
+	color: #555;
+	line-height: 1.5;
+	text-decoration: none;
+}
+
+footer #platform {
+	padding: 12px 0 25px;
+	position: relative;
+	overflow: hidden;
+}
+
+footer #platform ul {
+	position: relative;
+	left: 50%;
+	float: left;
+}
+
+footer #platform ul li {
+	padding: 0 10px;
+	position: relative;
+	left: -50%;
+	float: left;
+}
+
+footer #platform ul .pc img{
+	width: 44px;
+	height: 44px;
+}
+/*footer #platform ul .pc {
+	border-right: 1px solid #555;
+}*/
+
+footer #platform ul li a {
+	text-decoration: none;
+}
+
+footer #platform ul li a:hover,
+footer #platform ul li a:focus,
+footer #platform ul li a:active {
+	text-decoration: underline;
+}
+
+footer #copyright {
+	text-align: center;
+}
+
+footer nav#fix {
+    position: fixed;
+    background: #ce93c0;
+	opacity: 0.9;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 10000;
+	font-weight: bold;
+	height: 54px;
+}
+
+footer nav#fix ul li {
+    width: 33.33333333%;
+    float: left;
+    text-align: center;
+}
+footer nav#fix ul li a {
+	background: #e9afdb;
+	width: 100%;
+	padding: 10px 0;
+    color: #FFF;
+	text-indent: 10px;
+	text-decoration: none;
+	display: block;
+}
+footer nav#fix2 {
+    position: fixed;
+    background: #933ba9;
+	opacity: 0.9;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 10000;
+	font-weight: bold;
+	height: 54px;
+}
+
+footer nav#fix2 ul li {
+    width: 33.33333333%;
+    float: left;
+    text-align: center;
+}
+footer nav#fix2 ul li a {
+	background: #b160c6;
+	width: 100%;
+	padding: 10px 0;
+    color: #FFF;
+	text-indent: 10px;
+	text-decoration: none;
+	display: block;
+}
+
+/* ----------------------------------- */
+
+/* -----------------------------------
+    2. Social
+   ----------------------------------- */
+#social {
+	margin: 10px 0;
+	position: relative;
+	overflow: hidden;
+}
+
+#social ul {
+	position: relative;
+	left: 50%;
+	float: left;
+}
+
+#social ul li {
+	position: relative;
+	left: -50%;
+	float: left;
+}
+
+#social ul .btn01 {
+	margin: 0 2px 0 0;
+	width: 32px;
+	overflow: hidden;
+}
+
+#social ul .btn02 {
+	margin: 0 6px;
+}
+
+#social ul .btn02 iframe {
+	width: 71px;
+	height: 21px;
+	border: none;
+	overflow: hidden;
+}
+
+#social ul .btn03 {
+	width: 69px;
+	overflow: hidden;
+}
+
+#social ul .btn04 {
+	margin:0 0 0 5px;
+	width: 88px;
+	overflow: hidden;
+}
+
+/* ----------------------------------- */
+
+
+/* -----------------------------------
+    5. Global Navigation
+   ----------------------------------- */
+#global,
+#fglobal {
+	width: 100%;
+	height: 40px;
+	background: -moz-linear-gradient(center top, #fa93c3 0%,#e84793 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fa93c3),color-stop(1, #e84793));
+}
+
+#global ul li,
+#fglobal ul li {
+	background: transparent url(../img/dot_f9c.gif) repeat-y left top;
+	width: 20%;
+	height: 40px;
+	float: left;
+	text-align: center;
+}
+
+#global ul .navi01,
+#fglobal ul .navi01 {
+	background: none;
+}
+
+#global ul li a,
+#fglobal ul li a {
+	width: 100%;
+	height: 26px;
+	padding-top: 14px;
+	color: #fff;
+	font-size: 11px;
+	line-height: 1.3;
+	display: block;
+	position: relative;
+	text-decoration: none;
+}
+
+#global ul li a:hover,
+#global ul li a:focus,
+#global ul li a:active,
+#fglobal ul li a:hover,
+#fglobal ul li a:focus,
+#fglobal ul li a:active {
+	background: -moz-linear-gradient(center top, #fcc5df 0%,#f488bb 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fcc5df),color-stop(1, #f488bb));
+}
+
+
+/* ----------------------------------- */
+
+
+
+/* -----------------------------------
+    6. Navigation Button
+   ----------------------------------- */
+#back {
+	width: 100%;
+	margin-top: 15px;
+}
+
+#back a {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 14px;
+	color: #f75d8e;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	background: url(../../common/img/icon_arrow03_l.png) no-repeat 13px center,
+		-moz-linear-gradient(top, #fce9f1 0%, #f8c4dc);
+	background: url(../../common/img/icon_arrow03_l.png) no-repeat 13px center,
+		-webkit-gradient(linear, left top, left bottom, from(#fce9f1), to(#f8c4dc));
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-box-shadow: 2px 2px 3px rgba(000,000,000,0.3);
+		-webkit-box-shadow: 2px 2px 3px rgba(000,000,000,0.3);
+}
+
+#prev {
+	width: 100%;
+	margin-top: 10px;
+}
+
+#prev a {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 14px;
+	color: #f75d8e;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	background: url(../../common/img/icon_arrow03_r.png) no-repeat 98% center, -moz-linear-gradient(top, #fce9f1 0%, #f8c4dc);
+	background: url(../../common/img/icon_arrow03_r.png) no-repeat 98% center, -webkit-gradient(linear, left top, left bottom, from(#fce9f1), to(#f8c4dc));
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-box-shadow: 2px 2px 3px rgba(000,000,000,0.3);
+	-webkit-box-shadow: 2px 2px 3px rgba(000,000,000,0.3);
+}
+
+#prev2 {
+	width: 100%;
+	margin-top: 5px;
+}
+
+#prev2 a {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 14px;
+	color: #f75d8e;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	background: url(../../common/img/icon_arrow03_r.png) no-repeat 98% center, -moz-linear-gradient(top, #fce9f1 0%, #f8c4dc);
+	background: url(../../common/img/icon_arrow03_r.png) no-repeat 98% center, -webkit-gradient(linear, left top, left bottom, from(#fce9f1), to(#f8c4dc));
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-box-shadow: 2px 2px 3px rgba(000,000,000,0.3);
+	-webkit-box-shadow: 2px 2px 3px rgba(000,000,000,0.3);
+}
+
+
+/* ----------------------------------- */
+
+
+
+/* -----------------------------------
+    7. Flick
+   ----------------------------------- */
+#flick {
+	overflow: hidden;
+}
+
+#flick .container {
+	position: relative;
+	clear: both;
+	overflow: hidden;
+}
+
+#flick .container .itemBox {
+	position: relative;
+}
+
+#flick .container .itemBox .item {
+	text-align: center;
+	position:relative;
+	overflow:hidden;
+	float: left;
+}
+
+#flick .container .itemBox .item img {
+	width: 225px;
+	height: 360px;
+	margin-right: 15px;
+}
+
+#flick .container .itemBox .item ul {
+	position: relative;
+	left: 50%;
+	float: left;
+}
+
+#flick .container .itemBox .item ul li {
+	position: relative;
+	left: -50%;
+	float: left;
+}
+
+#flick .container .itemBox .item ul li dl {
+	margin: 5px 0;
+	text-align: left;
+}
+
+#flick .container .itemBox .item ul li dl dt {
+	margin-top: 5px;
+	font-size: 12px;
+	line-height: 1.25;
+}
+
+#flick .container .itemBox .item ul li dl dt span {
+	color: #555;
+	font-size: 11px;
+}
+
+#flick .container .itemBox .item ul li dl dd {
+	line-height: 1.5;
+	font-size: 12px;
+}
+
+#flick .container .itemBox .item ul li dl dd p {
+	color: #f00;
+	font-size: 14px;
+	font-style: normal;
+}
+
+#flick .container .itemBox .item ul li dl dd strong {
+	color: #f00;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+#flick .container .itemBox .item ul li:first-child {
+	margin-right: 7px;
+}
+
+#flick .container .itemBox .item ul li:first-child dl dt {
+	color: #f00;
+	font-size: 14px;
+}
+
+#flick .container .itemBox .item ul li:first-child dl dd {
+	color: #555;
+	font-size: 12px;
+}
+
+#flick .container .moving {
+	-webkit-transition: -webkit-transform .2s ease-out;
+	-moz-transition: -moz-transform .2s ease-out;
+	-o-transition: -o-transform .2s ease-out;
+	-ms-transition: -ms-transform .2s ease-out;
+}
+
+#flick .container .next_prev li {
+	width: 28px;
+	height: 47px;
+	display: block;
+	font-size: 0.01em;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+
+#flick .container .next_prev .off {
+	display: none;
+}
+
+#flick .container .next_prev .prev {
+	background: transparent url(../img/icon_arrow08_l.png) no-repeat;
+	position: absolute;
+	top: 40%;
+	left: 3px;
+}
+
+#flick .container .next_prev .next {
+	background: transparent url(../img/icon_arrow08_r.png) no-repeat;
+	position: absolute;
+	top: 40%;
+	right: 20px;
+}
+
+
+/* ----------------------------------- */
+
+
+
+/* -----------------------------------
+       Other
+   ----------------------------------- */
+*.hov:hover,
+*.hov:focus,
+*.hov:active {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+	-ms-filter: "alpha(opacity=80)";
+}
+
+h6,
+#pganchor {
+	display: block;
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+.null {
+	width: 1px;
+	height: 1px;
+}
+
+.tel {
+	letter-spacing: -1px;
+}
+
+
+/* ----------------------------------- */
+
+
+
+/* -----------------------------------
+       Float Canceler
+   ----------------------------------- */
+.clrflt:after {
+	content: url(../img/dot_null.gif);
+	height: 0;
+	font-size: 0;
+	clear: both;
+	display: block;
+	visibility: hidden;
+}
+
+* html .clrflt {
+	display: inline-block;
+}
+
+*:first-child+html .clrflt {
+	zoom: 1;
+}
+
+/* start BackSlash Hack \*/
+* html .clrflt {
+	height: 1%;
+}
+
+.clrflt {
+	display: block;
+}
+/* end BackSlash Hack */
+
+
+/* ----------------------------------- */
+
