@@ -1,0 +1,1400 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+	linkcolor
+-------------------------------------------------------------------------------
+*/
+
+a {
+	color: #666;
+	text-decoration: underline;
+}
+
+a:visited {
+}
+
+a:hover {
+	color: #c06;
+	text-decoration: none;
+}
+
+a:active {
+}
+
+.push a:hover {
+	position: relative;
+	top: 1px;
+	left: 1px;
+}
+
+
+/*
+	基本のレイアウト
+-------------------------------------------------------------------------------
+*/
+
+body {
+	color: #333;
+	background: url(../images/bg_body.jpg) repeat-x top;
+	text-align: center;
+}
+
+#all {
+	text-align: left;
+	width: 776px;
+	margin: 0 auto;
+}
+
+#contents {
+	background: url(../images/bg_box.png) repeat-y;
+	clear: both;
+	padding: 0 8px 30px;
+	overflow: hidden;
+}
+
+* html #contents {/*IE6*/
+	zoom: 1;
+}
+
+#main {
+	float: left;
+	width: 485px;
+	padding: 0 35px;
+}
+
+
+/*
+	共通スタイル
+-------------------------------------------------------------------------------
+*/
+
+
+ul.pan {
+	padding: 0 35px 20px;
+}
+
+ul.pan li {
+	display: inline;
+	font-size: 90%;
+}
+
+ul.pan li a {
+	padding-right: 15px;
+	background: url(../images/parts/icon_02.gif) no-repeat right center;
+}
+
+#main h2 {
+	font-size: 0;
+	line-height: 0;
+	margin-bottom: 15px;
+}
+
+#main h3 {
+	font-size: 110%;
+	font-weight: bold;
+	color: #c06;
+	margin-bottom: 1em;
+}
+
+p.pagetop {
+	background: url(../images/parts/line_01.gif) repeat-x bottom;
+	font-size: 90%;
+	text-align: right;
+	clear: both;
+	padding: 0 5px 3px;
+	margin: 1em 0 2em;
+}
+
+p.pagetop a {
+	text-decoration: none;
+}
+
+ul.anchor {
+	background: url(../../share/images/parts/line_01.gif) repeat-x bottom;
+	padding-bottom: 1em;
+	margin-bottom: 1.5em;
+}
+
+ul.anchor li {
+	display: -moz-inline-box;
+	display: inline-block;
+	padding-right: 5px;
+}
+
+* html ul.anchor li {/*IE6*/
+	display: inline;
+}
+
+*:first-child + html ul.anchor li {/*IE7*/
+	display: inline;
+}
+
+ul.anchor li a {
+	border: 1px solid #f36;
+	text-decoration: none;
+	color: #f36;
+	display: block;
+	padding: 3px 10px;
+}
+
+ul.anchor li a:hover {
+	color: #fff;
+	background: #f36;
+}
+
+.point {
+	color: #f00;
+}
+
+.memo {
+	font-size: 90%;
+}
+
+a:hover img {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)";
+}
+
+/*
+	トップページ #top
+-------------------------------------------------------------------------------
+*/
+
+#top #main h2 {
+	background: url(../images/parts/line_02.gif) no-repeat right center;
+	margin-bottom: 0;
+}
+
+#top #main h4 {
+	color: #f03;
+	font-weight: bold;
+}
+
+#top #main #brand h2 {
+	height: 25px;
+	margin: 10px 0;
+}
+
+#top #main #info a {
+	color: #f63;
+}
+
+#top #main #info .infobox {
+	margin-bottom: 10px;
+	padding: 10px 1em 5px;
+	background: #fff7fa url(../../images/bg_infobox.gif) no-repeat right bottom;
+}
+
+#top #main #info .present {
+	background: url(../images/parts/line_01.gif) repeat-x bottom;
+	padding-bottom: 5px;
+}
+
+#top #main #info h3 {
+	height: 25px;
+	margin: 10px 0;
+}
+
+#top #main dl.info dt {
+	margin: 5px 0 0;
+}
+
+#top #main dl.info dd.more {
+	text-align: right;
+	background: url(../images/parts/line_01.gif) repeat-x bottom;
+	padding-bottom: 5px;
+}
+
+#top #main dl.info dd.more a {
+	color: #f63;
+}
+
+#top ul#sns-btn{
+	margin-bottom: 15px;
+	background: #FFF4FF;
+	padding: 5px 5px 0 5px;
+	overflow: hidden;
+}
+#top ul#sns-btn li{
+	float: left;
+	margin: 0;
+	width: 120px !important;
+}
+
+#top #banner-smt{
+	margin-bottom: 15px;
+	margin-top:15px;
+}
+#top .bnrevent {
+	color: #f00;
+	margin: 0 auto;
+}
+
+#top ul.whatsnew {
+	border: 1px solid #999;
+	padding: 5px 10px;
+	margin: 5px 0;
+	max-height: 70px;
+	height:expression(document.documentElement.scrollHeight > 72?'70px':'auto');
+	overflow: auto;
+}
+
+#top ul.whatsnew li {
+	margin: 0;
+}
+
+#top #main #emargency {
+	color: red;
+}
+
+#top #main #emargency h4 {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+#top #main #emargency p {
+	line-height: 125%;
+}
+
+#top #ctgrlink {
+	margin-top: 30px;
+}
+
+#top #ctgrlink ul li {
+	width: 235px;
+	float: left;
+}
+
+#top #ctgrlink ul li h4 {
+	height: 23px;
+	margin-bottom: 5px;
+	padding: 0 5px;
+	color: #fff;
+	font-weight: bold;
+	background: transparent url(../../images/bg_ctgrlink.jpg) no-repeat;
+}
+
+#top #ctgrlink ul li p {
+	font-size: .9em;
+}
+
+#top #ctgrlink ul li a {
+	color: #f63;
+}
+
+#top #ctgrlink ul .second {
+	float: right;
+}
+
+
+/*
+	フォーム
+-------------------------------------------------------------------------------
+*/
+
+table.form {
+	border-collapse: collapse;
+}
+
+table.form th,
+table.form td {
+	line-height: 1.4;
+	font-size: 100%;
+	border: 2px solid #c69;
+	vertical-align: top;
+	text-align: left;
+	padding: 5px;
+}
+
+table.form th {
+	font-weight: normal;
+	width: 110px;
+}
+
+table.form th span {
+	color: #f00;
+}
+
+table.form td p,
+table.form td li {
+	line-height: 1.4;
+	margin-bottom: 0;
+}
+
+table.form td .caution {
+	color: #f00;
+}
+
+table.form td .error {
+	color: #f00;
+	font-weight: bold;
+}
+
+table.form td input {
+	vertical-align: middle;
+	margin: 0 3px;
+}
+
+table.form td .name input {
+	width: 145px;
+}
+
+table.form td ul.address input {
+	width: 180px;
+}
+
+table.form td .num input {
+	width: 3em;
+}
+
+table.form td .mail input {
+	width: 20em;
+}
+
+table.form td input.txt {
+	width: 145px;
+}
+
+table.form td textarea {
+	width: 95%;
+	height: 6em;
+}
+
+p.formbtn {
+	text-align: center;
+	margin: 1em 0 2em;
+}
+
+
+/*
+	privacy policy
+-------------------------------------------------------------------------------
+*/
+
+h3.privacy {
+	margin-top: 2em;
+}
+
+ul.privacy li dt {
+	margin-bottom: 0;
+}
+
+ul.privacy li dd {
+	padding-left: 1.5em;
+}
+
+ul.privacy li li {
+	text-indent: -1.5em;
+	padding-left: 3em;
+	margin-bottom: 0;
+}
+
+p.privacy {
+	text-align: right;
+	border-top: 1px solid #666;
+	padding-top: 1em;
+}
+
+
+/*
+	会社概要
+-------------------------------------------------------------------------------
+*/
+
+table.company th,
+table.company td {
+	font-size: 100%;
+	line-height: 1.6;
+	text-align: left;
+	vertical-align: top;
+	padding: 0 20px 15px;
+}
+
+table.company th {
+	color: #c69;
+	white-space: nowrap;
+}
+
+table.company td li {
+	margin-bottom: 0;
+}
+
+
+/*
+	サイトマップ
+-------------------------------------------------------------------------------
+*/
+
+ul.sitemap {
+	padding: 0 25px;
+}
+
+ul.sitemap li {
+	background: url(../images/parts/icon_03.gif) no-repeat left top;
+	font-weight: bold;
+	padding: 0 0 1em 25px;
+	margin-bottom: 0;
+}
+
+ul.sitemap li a {
+	color: #c69;
+	text-decoration: none;
+}
+
+ul.sitemap li a:hover {
+	text-decoration: underline;
+}
+
+ul.sitemap li li {
+	background: none;
+	font-weight: normal;
+	padding: 0 0 0 1em;
+}
+
+
+/*
+	振袖コレクション #collection
+-------------------------------------------------------------------------------
+*/
+
+#collection #main dl.push {
+	background: url(../images/parts/line_01.gif) repeat-x bottom;
+	text-align: center;
+	padding: 1em 0 2em;
+}
+
+#collection #main dl.push dd {
+	font-size: 90%;
+	display: -moz-inline-box;
+	display: inline-block;
+	width: 45%;
+}
+
+* html #collection #main dl.push dd {/*IE6*/
+	display: inline;
+}
+
+*:first-child + html #collection #main dl.push dd {/*IE7*/
+	display: inline;
+}
+
+#collection dl.flashDL {
+	background: url(../images/parts/line_01.gif) repeat-x bottom;
+	padding: 1em 40px 2em;
+}
+
+#collection dl.flashDL dd {
+	text-align: center;
+}
+
+#main ul#sns-btn{
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+#main ul#sns-btn li{
+	float: left;
+	margin: 0;
+	width: 120px !important;
+}
+
+/*
+	お客様の声 #voice
+-------------------------------------------------------------------------------
+*/
+
+#voice ul.voicelist li {
+	background: url(../../voice/images/bg_voice02.gif) no-repeat left bottom;
+	width: 465px;
+	//padding-bottom: 20px;
+	padding-bottom: 1px;
+}
+
+#voice ul.voicelist li p {
+	padding: 0 20px;
+}
+
+#voice ul.voicelist li p.customer {
+	background: url(../../voice/images/bg_voice01.gif) no-repeat left top;
+	color: #fff;
+	font-size: 110%;
+	font-weight: bold;
+	padding: 15px 60px 8px;
+}
+
+#voice #main h3 {
+	margin-bottom: 0;
+}
+
+
+/*
+	モバイル版
+-------------------------------------------------------------------------------
+*/
+
+#main p.mbopen {
+	background: url(../../images/bg_mobile.jpg) no-repeat left top;
+	padding: 220px 0 20px;
+	margin-top: -1em;
+}
+
+
+/*
+	クーポン
+-------------------------------------------------------------------------------
+*/
+
+#main p.couponpic {
+	float: left;
+	padding-right: 5px;
+}
+
+#main div.couponprint {
+	clear: both;
+	padding-top: 2em;
+}
+
+#main div.couponprint ul {
+	border: 1px solid #f36;
+	padding: 15px 0 15px 20px;
+	margin-top: -.5em;
+	overflow: hidden;
+}
+
+* html #main div.couponprint ul {
+	zoom: 1;
+}
+
+#main div.couponprint ul li {
+	float: left;
+	padding-right: 20px;
+	margin-bottom: 0;
+}
+
+#main div.couponprint dl.mb {
+	padding-left: 30px;
+}
+
+#main div.couponprint dl.mb dt {
+	float: left;
+	width: 80px;
+	margin: 0;
+}
+
+#main div.couponprint dl.mb dd {
+	float: right;
+	width: 70px;
+	padding-left: 20px;
+}
+
+#main div.couponprint dl.mb dd img {
+	border: 1px solid #666;
+}
+
+
+/*
+	カタログ インデックス #catalog #index
+-------------------------------------------------------------------------------
+*/
+
+#main #catalog #index .notes {
+	margin-left: 1em;
+	text-indent: -1em;
+}
+
+#main #catalog #index .notes em {
+	color: #f00;
+	font-style: normal;
+}
+
+#main #catalog #index #cover {
+	padding-bottom: 80px;
+	background: transparent url(../../catalog/images/cover_bottom.gif) no-repeat center bottom;
+}
+
+#main #catalog #index #cover ul {
+	margin-bottom: 25px;
+	padding-top: 80px;
+	background: transparent url(../../catalog/images/cover_top.gif) no-repeat center top;
+}
+
+#main #catalog #index #cover ul li {
+	float: left;
+}
+
+#main #catalog #index #cover ul .cover02 {
+	margin: 0 10px;
+}
+
+#main #catalog #index #cover ul li a {
+	width: 155px;
+	height: 213px;
+	font-size: 0.01em;
+	text-indent: -9999px;
+	display: block;
+}
+
+#main #catalog #index #cover ul#sale li a {
+	width: 485px;
+	height: 100px;
+	font-size: 0.01em;
+	text-indent: -9999px;
+	display: block;
+}
+
+#main #catalog #index #cover ul .cover01 a {
+	background: transparent url(../../catalog/images/cover01.jpg) no-repeat;
+}
+
+#main #catalog #index #cover ul .cover02 a {
+	background: transparent url(../../catalog/images/cover02.jpg) no-repeat;
+}
+
+#main #catalog #index #cover ul .cover03 a {
+	background: transparent url(../../catalog/images/cover03.jpg) no-repeat;
+}
+#main #catalog #index #cover ul#sale .cover04 a {
+	background: transparent url(../../catalog/images/cover04.jpg) no-repeat;
+}
+
+#main #catalog #index #cover .mb0 {
+	margin-bottom: 0;
+}
+
+#main #catalog #index #cover ul li a:hover,
+#main #catalog #index #cover ul li a:focus,
+#main #catalog #index #cover ul li a:active {
+	background-position: 0 -213px;
+}
+
+#main #catalog #index #cover ul#sale li a:hover,
+#main #catalog #index #cover ul#sale li a:focus,
+#main #catalog #index #cover ul#sale li a:active {
+	background-position: 0 -100px;
+}
+
+#main #catalog #index #banner {
+	margin: 25px 0 30px;
+}
+
+#main #catalog #index #banner ul li {
+	float: left;
+}
+
+#main #catalog #index #banner ul .banner02 {
+	margin-left: 10px;
+}
+
+#main #catalog #index #banner ul li a {
+	width: 235px;
+	height: 65px;
+	font-size: 0.01em;
+	text-indent: -9999px;
+	display: block;
+}
+
+#main #catalog #index #banner ul li a:hover,
+#main #catalog #index #banner ul li a:focus,
+#main #catalog #index #banner ul li a:active {
+	background-position: 0 -65px;
+}
+
+#main #catalog #index #banner ul .banner01 a {
+	background: transparent url(../../catalog/images/bnr_collection01.jpg) no-repeat;
+}
+
+#main #catalog #index #banner ul .banner02 a {
+	background: transparent url(../../catalog/images/bnr_collection02.jpg) no-repeat;
+}
+
+#main #catalog #index .adobe {
+	padding: 0 40px 2em;
+}
+
+#main #catalog #index .adobe dd {
+	text-align: center;
+}
+
+
+/*
+	カタログ 簡易版 #catalog #simple
+-------------------------------------------------------------------------------
+*/
+
+#main #catalog #simple {
+	padding-bottom: 50px;
+	overflow: hidden;
+	background: transparent url(../../catalog/simple/images/bg_catalog01.gif) no-repeat center bottom;
+}
+
+#main #catalog #simple #season {
+	padding-top: 28px;
+	background: transparent url(../../catalog/simple/images/bg_season01.jpg) no-repeat;
+}
+
+#main #catalog #simple #season .shadow {
+	background: transparent url(../../catalog/simple/images/bg_shadow01.png) no-repeat left bottom;
+}
+
+#main #catalog #simple #season .shadow h3 {
+	font-size: 0.01em;
+	text-indent: -9999px;
+}
+
+#main #catalog #simple #season .shadow .tab {
+	height: 31px;
+	margin-left: 195px;
+}
+
+#main #catalog #simple #season #tab01 .tab ul {
+	background: transparent url(../../catalog/simple/images/bg_tab01.png) no-repeat;
+}
+
+#main #catalog #simple #season #tab02 .tab ul {
+	background: transparent url(../../catalog/simple/images/bg_tab02.png) no-repeat;
+}
+
+#main #catalog #simple #season #tab03 .tab ul {
+	background: transparent url(../../catalog/simple/images/bg_tab03.png) no-repeat;
+}
+
+#main #catalog #simple #season .shadow .tab ul li {
+	float: left;
+}
+
+#main #catalog #simple #season .shadow .tab ul li a {
+	width: 90px;
+	height: 25px;
+	margin-top: 6px;
+	font-size: 0.01em;
+	text-indent: -9999px;
+	display: block;
+}
+
+#main #catalog #simple #season .shadow .tab ul li span {
+	width: 95px;
+	height: 25px;
+	font-size: 0.01em;
+	text-indent: -9999px;
+	display: block;
+}
+
+#main #catalog #simple #season .shadow .tab ul .tab01 a {
+	margin-left: 7px;
+}
+
+#main #catalog #simple #season #tab01 .tab ul .tab02 a {
+	margin-left: 6px;
+}
+
+#main #catalog #simple #season #tab01 .tab ul .tab03 a {
+	margin-left: 3px;
+}
+
+#main #catalog #simple #season #tab02 .tab ul .tab03 a {
+	margin-left: 3px;
+}
+
+#main #catalog #simple #season #tab03 .tab ul .tab02 a {
+	margin-left: 3px;
+}
+
+#main #catalog #simple #season .shadow .column {
+	width: 251px;
+	margin-left: 195px;
+}
+
+#main #catalog #simple #season .shadow .column .banner {
+	height: 35px;
+}
+
+#main #catalog #simple #season .shadow .column .banner li {
+	float: left;
+}
+
+#main #catalog #simple #season .shadow .column .banner li a {
+	width: 120px;
+	height: 35px;
+	font-size: 0.01em;
+	text-indent: -9999px;
+	display: block;
+}
+
+#main #catalog #simple #season .shadow .column .banner .banner02 {
+	margin-left: 10px;
+}
+
+#main #catalog #simple #season .shadow .column .banner .banner01 a {
+	background: transparent url(../../catalog/simple/images/bnr_catalog01.gif) no-repeat;
+}
+
+#main #catalog #simple #season .shadow .column .banner .banner02 a {
+	background: transparent url(../../catalog/simple/images/bnr_catalog02.gif) no-repeat;
+}
+
+#main #catalog #simple #season .shadow .column .banner li a:hover,
+#main #catalog #simple #season .shadow .column .banner li a:focus,
+#main #catalog #simple #season .shadow .column .banner li a:active {
+	background-position: 0 -35px;
+}
+
+#main #catalog #simple #season .shadow .column {
+	padding: 75px 20px 0;
+}
+
+#main #catalog #simple #season #tab01 .column {
+	background: transparent url(../../catalog/simple/images/bg_column01.png) no-repeat;
+}
+
+#main #catalog #simple #season #tab02 .column {
+	background: transparent url(../../catalog/simple/images/bg_column02.png) no-repeat;
+}
+
+#main #catalog #simple #season #tab03 .column {
+	background: transparent url(../../catalog/simple/images/bg_column03.png) no-repeat;
+}
+
+#main #catalog #simple #season .shadow p {
+	min-height: 4em;
+	_height: auto !important;
+	_height: 4em;
+	color: #666;
+	font-size: 0.92em;
+	line-height: 1.25;
+}
+
+#main #catalog #simple .list ul {
+	margin-left: -6px;
+}
+
+#main #catalog #simple .list ul li {
+	margin: 25px 0 0 12px;
+	_margin: 25px 0 0 10px;
+	padding: 2px;
+	float: left;
+	position: relative;
+	background: #fef;
+}
+
+#main #catalog #simple .list ul li img {
+	width: 106px;
+	height: 196px;
+}
+
+#main #catalog #simple .list ul li a {
+	width: 106px;
+	height: 196px;
+	font-size: 0.01em;
+	text-indent: -9999px;
+	position: absolute;
+	top: 2;
+	left: 2px;
+	background: transparent url(../../catalog/simple/images/icon_zoom01.png) no-repeat 80px 5px;
+}
+
+#main #catalog #simple .list ul li a:hover,
+#main #catalog #simple .list ul li a:focus,
+#main #catalog #simple .list ul li a:active {
+	background-color: #fff;
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+	-ms-filter: "alpha(opacity=40)";
+}
+
+
+/*
+	メインビジュアルナビゲーション #visualnavi
+-------------------------------------------------------------------------------
+*/
+
+#visualnavi {
+	margin-bottom: 15px;
+	padding: 0 10px 10px;
+	background: transparent url(../../images/visualnavi/bg_visualnavi.gif) repeat-y left top;
+}
+
+#visualnavi #screen {
+	width: 530px;
+	height: 300;
+	overflow: hidden;
+	float: left;
+}
+
+#visualnavi #slides {
+	width: 530px;
+	height: 300px;
+	overflow: hidden;
+}
+
+#visualnavi #slides h3 a {
+	width: 530px;
+	height: 300px;
+	overflow: hidden;
+	font-size: 0.01em;
+	text-indent: -9999px;
+	display: block;
+	overflow: hidden;
+	outline: none;
+}
+
+#visualnavi #slides .slide01 a {
+	background: transparent url(../../images/visualnavi/visualimg01.jpg) no-repeat;
+}
+
+#visualnavi #slides .slide02 a {
+	background: transparent url(../../images/visualnavi/visualimg02.jpg) no-repeat;
+}
+
+#visualnavi #slides .slide03 a {
+	background: transparent url(../../images/visualnavi/visualimg03.jpg) no-repeat;
+}
+
+#visualnavi #slides h3 {
+	float:left;
+}
+
+#visualnavi #menu {
+	padding: 5px 10px 10px 2px;
+	float: right;
+	background: transparent url(../../images/visualnavi/bg_menu.png) repeat;
+}
+
+#visualnavi #menu ul li {
+	height: 90px;
+	margin: 5px 0 0;
+	_margin: 4px 0 0;
+}
+
+#visualnavi #menu ul li a {
+	width: 188px;
+	height: 90px;
+	font-size: 0.01em;
+	text-indent: -9999px;
+	display: block;
+	overflow: hidden;
+	outline: none;
+}
+
+#visualnavi #menu .menu01 a {
+	background: transparent url(../../images/visualnavi/navimg01.png) no-repeat;
+}
+
+#visualnavi #menu .menu02 a {
+	background: transparent url(../../images/visualnavi/navimg02.png) no-repeat;
+}
+
+#visualnavi #menu .menu03 a {
+	background: transparent url(../../images/visualnavi/navimg03.png) no-repeat;
+}
+
+#visualnavi #menu ul li.act a,
+#visualnavi #menu ul li a:hover,
+#visualnavi #menu ul li a:focus,
+#visualnavi #menu ul li a:active {
+	background-position: 0 -90px;
+}
+
+
+/*
+	小物コレクション 簡易版 #accessory #simple
+-------------------------------------------------------------------------------
+*/
+#main p#bn-btn{
+	text-align: right;
+	padding-right: 5px;
+}
+
+#main #accessory #simple {
+	padding-bottom: 50px;
+	overflow: hidden;
+	background: transparent url(../../collection/accessory/simple/images/bg_catalog01.gif) no-repeat center bottom;
+}
+
+#main #accessory #simple #season {
+	padding-top: 10px;
+	background: transparent url(../../collection/accessory/simple/images/bg_season01.jpg) no-repeat 0 40px;
+}
+
+#main #accessory #simple #season .shadow {
+	background: transparent url(../../collection/accessory/simple/images/bg_shadow01.png) no-repeat left bottom;
+}
+
+#main #accessory #simple #season .shadow h3 {
+	font-size: 0.01em;
+	text-indent: -9999px;
+}
+
+#main #accessory #simple #season .shadow .tab {
+	height: 31px;
+	margin-left: 195px;
+}
+
+#main #accessory #simple #season #tab01 .tab ul {
+	background: transparent url(../../collection/accessory/simple/images/bg_tab01.png) no-repeat;
+}
+
+#main #accessory #simple #season #tab02 .tab ul {
+	background: transparent url(../../collection/accessory/simple/images/bg_tab02.png) no-repeat;
+}
+
+#main #accessory #simple #season #tab03 .tab ul {
+	background: transparent url(../../collection/accessory/simple/images/bg_tab03.png) no-repeat;
+}
+
+#main #accessory #simple #season .shadow .tab ul li {
+	float: left;
+}
+
+#main #accessory #simple #season .shadow .tab ul li a {
+	width: 90px;
+	height: 25px;
+	margin-top: 6px;
+	font-size: 0.01em;
+	text-indent: -9999px;
+	display: block;
+}
+
+#main #accessory #simple #season .shadow .tab ul li span {
+	width: 95px;
+	height: 25px;
+	font-size: 0.01em;
+	text-indent: -9999px;
+	display: block;
+}
+
+#main #accessory #simple #season .shadow .tab ul .tab01 a {
+	margin-left: 7px;
+}
+
+#main #accessory #simple #season #tab01 .tab ul .tab02 a {
+	margin-left: 6px;
+}
+
+#main #accessory #simple #season #tab01 .tab ul .tab03 a {
+	margin-left: 3px;
+}
+
+#main #accessory #simple #season #tab02 .tab ul .tab03 a {
+	margin-left: 3px;
+}
+
+#main #accessory #simple #season #tab03 .tab ul .tab02 a {
+	margin-left: 3px;
+}
+
+#main #accessory #simple #season .shadow .column {
+	width: 251px;
+	margin-left: 195px;
+}
+
+#main #accessory #simple #season .shadow .column .banner {
+	height: 35px;
+}
+
+#main #accessory #simple #season .shadow .column .banner li {
+	float: left;
+}
+
+#main #accessory #simple #season .shadow .column .banner li a {
+	width: 120px;
+	height: 35px;
+	font-size: 0.01em;
+	text-indent: -9999px;
+	display: block;
+}
+
+#main #accessory #simple #season .shadow .column .banner .banner02 {
+	margin-left: 10px;
+}
+
+#main #accessory #simple #season .shadow .column .banner .banner01 a {
+	background: transparent url(../../collection/accessory/simple/images/bnr_catalog01.gif) no-repeat;
+}
+
+#main #accessory #simple #season .shadow .column .banner .banner02 a {
+	background: transparent url(../../collection/accessory/simple/images/bnr_catalog02.gif) no-repeat;
+}
+
+#main #accessory #simple #season .shadow .column .banner li a:hover,
+#main #accessory #simple #season .shadow .column .banner li a:focus,
+#main #accessory #simple #season .shadow .column .banner li a:active {
+	background-position: 0 -35px;
+}
+
+#main #accessory #simple #season .shadow .column {
+	padding: 65px 20px 0;
+}
+
+#main #accessory #simple #season .column {
+	background: transparent url(../../collection/accessory/simple/images/bg_column01.png) no-repeat;
+}
+
+#main #accessory #simple #season .shadow .text {
+	min-height: 4em;
+	_height: auto !important;
+	_height: 4em;
+}
+
+#main #accessory #simple #season .shadow .text p {
+	color: #666;
+	font-size: 0.92em;
+	line-height: 1.25;
+}
+
+#main #accessory #simple #season .shadow .text .notes {
+	margin-left: 1em;
+	text-indent: -1em;
+}
+
+#main #accessory #simple .list ul {
+	margin-left: -6px;
+}
+
+#main #accessory #simple .list ul li {
+	width: 147px;
+	margin: 25px 0 0 12px;
+	_margin: 25px 0 0 10px;
+	padding: 2px;
+	float: left;
+	position: relative;
+}
+
+#main #accessory #simple .list ul li dl dt {
+	margin-bottom: 0;
+	padding: 7px 0;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	background: transparent url(../../collection/accessory/simple/images/bg_dt01.gif) no-repeat top center;
+}
+
+#main #accessory #simple .list ul li dl dd {
+	margin: 0;
+	padding: 0;
+}
+
+#main #accessory #simple .list ul li dl dd img {
+	width: 147px;
+	height: 140px;
+}
+
+#main #accessory #simple .list ul li dl dd a {
+	width: 147px;
+	height: 140px;
+	font-size: 0.01em;
+	text-indent: -9999px;
+	position: absolute;
+	top: 2;
+	left: 2px;
+	background: transparent url(../../collection/accessory/simple/images/icon_zoom01.png) no-repeat 120px 5px;
+}
+
+#main #accessory #simple .list ul li dl dd a:hover,
+#main #accessory #simple .list ul li dl dd a:focus,
+#main #accessory #simple .list ul li dl dd a:active {
+	background-color: #fff;
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+	-ms-filter: "alpha(opacity=40)";
+}
+
+/*
+	新小物コレクション
+-------------------------------------------------------------------------------
+*/
+
+#main #accessory #simple #item{
+	background: transparent url(../../collection/accessory/simple/images/bg.gif) no-repeat ;
+	width: 465px;
+	height: 407px;
+	padding: 10px;
+}
+#main #accessory #simple #item p#photo{
+	float: left;
+	margin-right: 10px;
+}
+#main #accessory #simple #item p#photo img{
+	width: 270px;
+}
+#main #accessory #simple #item dl{
+	background: transparent url(../../collection/accessory/simple/images/bg-description.gif) repeat-y;
+	margin-left: 280px;
+	padding: 10px;
+}
+#main #accessory #simple #item dl dt{
+	color: #cc0066;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 1.3;
+	border-bottom: dotted 2px #ccc;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+#main #accessory #simple #item dl dd{
+	line-height: 1.5;
+}
+#main #accessory #simple ul#item-nav{
+	margin-top: 20px;
+}
+#main #accessory #simple ul#item-nav li{
+	display: inline;
+}
+	
+/*
+	プライバシーポリシー #privacy
+-------------------------------------------------------------------------------
+*/
+#privacy h1 {
+	margin-bottom: 15px;
+}
+
+#privacy h1 {
+	height: 30px;
+	width: 463px;
+}
+
+
+/*
+	会社案内 #company
+-------------------------------------------------------------------------------
+*/
+#company h1 {
+	margin-bottom: 15px;
+}
+
+#company h1 {
+	height: 30px;
+	width: 463px;
+}
+
+
+/*
+	サイトマップ #sitemap
+-------------------------------------------------------------------------------
+*/
+#sitemap h1 {
+	margin-bottom: 15px;
+}
+
+#sitemap h1 {
+	height: 30px;
+	width: 463px;
+}
+
+
+/*
+	フロートスライド
+-------------------------------------------------------------------------------
+*/
+
+#floatslider {
+	width: 100%;
+	z-index: 100;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+
+#floatslider .slidebtn {
+	width: 160px;
+	height: 25px;
+	margin: 0 20px 0 auto;
+	font-size: .01em;
+	text-indent: -9999px;
+	cursor: pointer;
+	background: transparent url(../images/flts_tab.png) no-repeat;
+}
+
+#floatslider .slidebtn:hover,
+#floatslider .slidebtn:focus,
+#floatslider .slidebtn:active {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+	-ms-filter: "alpha(opacity=80)";
+}
+
+#floatslider .slidecont {
+	height: 116px;
+	display: none;
+	background: transparent url(../images/flts_bg.png) repeat-x left top;
+}
+
+#floatslider .slidebox {
+	width: 760px;
+	height: 116px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#floatslider .slidebox .cover {
+	position: absolute;
+	top: 8px;
+	left: 75px;
+}
+
+#floatslider .slidebox .text {
+	width: 144px;
+	height: 45px;
+	font-size: .01em;
+	text-indent: -9999px;
+	position: absolute;
+	top: 30px;
+	left: 160px;
+	background: transparent url(../images/flts_txt.png) no-repeat center left;
+}
+
+#floatslider .slidebox .button {
+	position: absolute;
+	top: 32px;
+	left: 322px;
+}
+
+#floatslider .slidebox .button a {
+	width: 369px;
+	height: 45px;
+	font-size: .01em;
+	text-indent: -9999px;
+	display: block;
+	background: transparent url(../images/flts_button.png) no-repeat;
+}
+
+#floatslider .slidebox .button a:hover,
+#floatslider .slidebox .button a:focus,
+#floatslider .slidebox .button a:active {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+	-ms-filter: "alpha(opacity=80)";
+}
+
+
+/*
+	その他
+-------------------------------------------------------------------------------
+*/
+
+.hintpage a {
+	background: transparent url(../images/bnr_push08.jpg) no-repeat;
+	display: block;
+	font-size: 0.01em;
+	height: 35px;
+	text-indent: -9999px;
+	width: 170px;
+}
+
+.hintpage a:hover,
+.hintpage a:focus,
+.hintpage a:active {
+	background-position: 0 -35px;
+}
+
+.col-p01 {
+	color: #f28;
+}
+
+hr.dot{
+	border:none;
+    border-top:dashed 1px #gray;
+    height:1px;
+    color:#FFFFFF;
+}

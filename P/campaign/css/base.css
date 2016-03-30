@@ -1,0 +1,87 @@
+﻿@charset "UTF-8";
+
+/* CSS Document */
+
+/*
+	default
+-------------------------------------------------------------------------------
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	font-family: Verdana, "ＭＳ Ｐゴシック", sans-serif;
+	font-size: 13px;
+}
+
+* html body {/*forIE6*/
+	font-size: 80%;
+}
+
+*:first-child + html body {/*forIE7*/
+	font-size: 80%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+
+p,li,dt,dl {
+	line-height: 1.6;
+	margin-bottom: 1em;
+}
+
+li {
+	list-style-type: none;
+}
+
+img {
+	border: 0;
+	vertical-align: bottom;
+}
+
+address {
+	font-style: normal;
+}
+
+
+/*
+	Clear Float
+-------------------------------------------------------------------------------
+*/
+
+.clrflt:after {
+	height: 0;
+	font-size: 0;
+	clear: both;
+	display: block;
+	visibility: hidden;
+	content: url(../img/dot_null.gif);
+}
+
+* html .clrflt {
+	display: inline-block;
+}
+
+*:first-child+html .clrflt {
+	zoom: 1;
+}
+
+/* start BackSlash Hack \*/
+* html .clrflt {
+	height: 1%;
+}
+
+.clrflt {
+	display: block;
+}
+/* end BackSlash Hack */
