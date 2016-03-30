@@ -32,7 +32,7 @@
 }
 
 #contents img {
-	max-width: 91%;
+	max-width: 90%;
 }
 
 #contents div.btn{
@@ -54,6 +54,7 @@
 #contents #contact{
 	text-align: center;
 	padding-bottom: 30px;
+	font-size:14px;
 }
 #contents #contact dl dt{
 	font-size: 16px;
